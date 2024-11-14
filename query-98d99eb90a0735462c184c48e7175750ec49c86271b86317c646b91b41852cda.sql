@@ -1,3 +1,6 @@
-
-SELECT COUNT(created_at) FROM packages WHERE scope = $1;
-    
+SELECT
+  COUNT(created_at)
+FROM
+  packages
+WHERE
+  scope = $1;

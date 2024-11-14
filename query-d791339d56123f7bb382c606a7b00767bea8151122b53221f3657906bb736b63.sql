@@ -1,1 +1,4 @@
-DELETE FROM scope_invites WHERE scope = $1
+DELETE FROM
+  scope_invites
+WHERE
+  scope = $1

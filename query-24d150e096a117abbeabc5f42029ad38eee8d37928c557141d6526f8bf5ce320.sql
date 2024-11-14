@@ -1,7 +1,11 @@
-
-UPDATE scopes SET require_publishing_from_ci = $1 WHERE scope = $2
+UPDATE
+  scopes
+SET
+  require_publishing_from_ci = $1
+WHERE
+  scope = $2
 RETURNING
-  scope as "scope: ScopeName",
+  scope AS "scope: ScopeName",
   creator,
   package_limit,
   new_package_per_week_limit,
@@ -10,5 +14,3 @@ RETURNING
   require_publishing_from_ci,
   updated_at,
   created_at
-
-      
