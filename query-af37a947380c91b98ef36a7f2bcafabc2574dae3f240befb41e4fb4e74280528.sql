@@ -1,1 +1,4 @@
-INSERT INTO bad_words (word) VALUES ($1)
+INSERT INTO
+  bad_words (word)
+VALUES
+  ($1)

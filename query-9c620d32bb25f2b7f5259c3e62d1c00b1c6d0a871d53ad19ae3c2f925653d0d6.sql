@@ -1,1 +1,4 @@
-DELETE FROM scopes WHERE scope = $1
+DELETE FROM
+  scopes
+WHERE
+  scope = $1
